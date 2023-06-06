@@ -24,17 +24,24 @@
       list-style-type: none;
       display: flex;
       align-items: center;
+    }
+    .select-list-burger--container,
+    .select-list-contacts--container {
       padding-left: 0px;
     }
 
     .select-list-burger > button {
       background: #ffffff;
       border: white;
+    }
+    .select-list-burger--container {
       padding: 0px;
       margin-left: 16px;
     }
 
     .select-list-contacts > li {
+    }
+    .select-list-contacts--container > li {
       padding-right: 16px;
     }
 

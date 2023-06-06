@@ -7,6 +7,16 @@
     background: linear-gradient(270deg, #f8f8f8 0%, #ffffff 98.61%);
     height: 80px;
     border-top: 1px solid #d9fff5;
+
+    .repair-text {
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+      color: #7e7e82;
+    }
+  }
+  .repair-block--container {
     margin-top: 20px;
     margin-bottom: 16px;
 
@@ -14,13 +24,8 @@
       margin-bottom: 30px;
     }
 
-    .repair-text {
+    .repair-text--container {
       margin-left: 16px;
-      font-size: 16px;
-      line-height: 24px;
-      letter-spacing: -0.2px;
-      text-transform: uppercase;
-      color: #7e7e82;
 
       @media (min-width: 768px) {
         margin-left: 24px;
@@ -45,6 +50,8 @@
 
       .swiper-wrapper {
         list-style: none;
+      }
+      .swiper-wrapper--container {
         padding: 0px;
         margin-left: 16px;
 
@@ -63,22 +70,16 @@
 
         @media (min-width: 768px) {
           width: 224px;
-          margin-bottom: 16px;
-          margin-right: 24px;
         }
 
         @media (min-width: 1440px) {
           width: 240px;
-          margin-bottom: 16px;
-          margin-right: 32px;
         }
 
         .btn-swipe {
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding-right: 16px;
-          padding-left: 16px;
           width: -webkit-fill-available;
           height: 72px;
           background: #ffffff;
@@ -87,13 +88,30 @@
           border-radius: 6px;
         }
       }
+      .swiper-slide--container {
+        @media (min-width: 768px) {
+          margin-bottom: 16px;
+          margin-right: 24px;
+        }
+
+        @media (min-width: 1440px) {
+          margin-bottom: 16px;
+          margin-right: 32px;
+        }
+        .btn-swipe--container {
+          padding-right: 16px;
+          padding-left: 16px;
+        }
+      }
       .swipe-pagination {
         position: unset;
-        margin-top: 16px;
 
         @media (min-width: 768px) {
           display: none;
         }
+      }
+      .swipe-pagination--container {
+        margin-top: 16px;
       }
       .swiper-pagination-bullet {
         width: 12px;
@@ -113,9 +131,8 @@
       display: none;
       cursor: pointer;
       align-items: center;
-      margin-left: 24px;
       border: 0px;
-      padding: 0px;
+
       background: #f8f8f8;
       font-family: 'TT Lakes', sans-serif;
       font-style: normal;
@@ -124,28 +141,33 @@
       line-height: 24px;
       letter-spacing: -0.2px;
       color: #1b1c21;
-      margin: 0px 0px 0px 16px;
 
       @media (min-width: 768px) {
         display: flex;
-        margin-left: 32px;
-      }
-
-      @media (min-width: 1440px) {
-        margin-left: 39px;
       }
 
       &--none {
         display: none;
       }
     }
+    .show-more--container {
+      margin-left: 24px;
+      margin: 0px 0px 0px 16px;
+      padding: 0px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+      }
+
+      @media (min-width: 1440px) {
+        margin-left: 39px;
+      }
+    }
     .hide-all {
       display: none;
       cursor: pointer;
       align-items: center;
-      margin-left: 24px;
       border: 0px;
-      padding: 0px;
+
       background: #f8f8f8;
       font-family: 'TT Lakes', sans-serif;
       font-style: normal;
@@ -154,14 +176,19 @@
       line-height: 24px;
       letter-spacing: -0.2px;
       color: #1b1c21;
-      margin: 0px 0px 0px 16px;
 
       @media (min-width: 768px) {
-        margin-left: 32px;
-
         &--active {
           display: block;
         }
+      }
+    }
+    .hide-all--container {
+      padding: 0px;
+      margin-left: 24px;
+      margin: 0px 0px 0px 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
       }
 
       @media (min-width: 1440px) {
@@ -170,6 +197,8 @@
     }
 
     .read-arrows {
+    }
+    .read-arrows--container {
       margin-right: 16px;
     }
   }
@@ -208,21 +237,16 @@
 
         @media (min-width: 768px) {
           width: 224px;
-          margin-bottom: 16px;
-          margin-right: 24px;
         }
 
         @media (min-width: 1440px) {
           width: 240px;
-          margin-bottom: 16px;
-          margin-right: 32px;
         }
 
         .btn-swipe {
           display: flex;
           justify-content: space-between;
-          padding-right: 16px;
-          padding-left: 16px;
+
           width: inherit;
           height: 160px;
           background: #ffffff;
@@ -232,7 +256,7 @@
 
           .rep-text {
             align-self: flex-start;
-            margin-top: 16px;
+
             font-family: TT Lakes;
             font-size: 16px;
             line-height: 24px;
@@ -242,13 +266,33 @@
 
           .arrow {
             align-self: flex-end;
-            margin-bottom: 16px;
           }
+        }
+      }
+      .swiper-slide--container {
+        @media (min-width: 768px) {
+          margin-bottom: 16px;
+          margin-right: 24px;
+        }
+
+        @media (min-width: 1440px) {
+          margin-bottom: 16px;
+          margin-right: 32px;
+        }
+        .btn-swipe--container {
+          padding-right: 16px;
+          padding-left: 16px;
+        }
+        .rep-text--container {
+          margin-top: 16px;
+        }
+        .arrow--container {
+          margin-bottom: 16px;
         }
       }
       .swiper-pagination-technique {
         position: unset;
-        margin-top: 16px;
+
         text-align: center;
         transition: 0.3s opacity;
         transform: translate3d(0, 0, 0);
@@ -257,6 +301,9 @@
         @media (min-width: 768px) {
           display: none;
         }
+      }
+      .swiper-pagination-technique--container {
+        margin-top: 16px;
       }
       .swiper-pagination-bullet {
         width: 12px;
@@ -275,9 +322,9 @@
       display: none;
       cursor: pointer;
       align-items: center;
-      margin-left: 24px;
+
       border: 0px;
-      padding: 0px;
+
       background: #f8f8f8;
       font-family: 'TT Lakes', sans-serif;
       font-style: normal;
@@ -286,28 +333,34 @@
       line-height: 24px;
       letter-spacing: -0.2px;
       color: #1b1c21;
-      margin: 0px 0px 0px 16px;
 
       @media (min-width: 768px) {
         display: flex;
-        margin-left: 32px;
-      }
-
-      @media (min-width: 1440px) {
-        margin-left: 39px;
       }
 
       &--none {
         display: none;
       }
     }
+    .show-more-technique--container {
+      padding: 0px;
+      margin-left: 24px;
+      margin: 0px 0px 0px 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+      }
+
+      @media (min-width: 1440px) {
+        margin-left: 39px;
+      }
+    }
     .hide-all-technique {
       display: none;
       cursor: pointer;
       align-items: center;
-      margin-left: 24px;
+
       border: 0px;
-      padding: 0px;
+
       background: #f8f8f8;
       font-family: 'TT Lakes', sans-serif;
       font-style: normal;
@@ -316,279 +369,309 @@
       line-height: 24px;
       letter-spacing: -0.2px;
       color: #1b1c21;
-      margin: 0px 0px 0px 16px;
 
       @media (min-width: 768px) {
-        margin-left: 32px;
-
         &--active {
           display: block;
         }
       }
-
+    }
+    .read-arrows {
+    }
+    .hide-all-technique--container {
+      padding: 0px;
+      margin-left: 24px;
+      margin: 0px 0px 0px 16px;
+      @media (min-width: 768px) {
+        margin-left: 32px;
+      }
       @media (min-width: 1440px) {
         margin-left: 39px;
       }
     }
-    .read-arrows {
+    .read-arrows--container {
       margin-right: 16px;
     }
   }
+}
 
-  .prices-container {
-    background: #f8f8f8;
+.prices-container {
+  background: #f8f8f8;
+  overflow: hidden;
+
+  .swiper-container--prices {
+    position: relative;
     overflow: hidden;
-    padding: 0 16px;
+    background: #f8f8f8;
 
-    @media (min-width: 768px) {
-      padding: 0 24px;
+    @media (min-width: 320px) and (max-width: 767px) {
+      max-height: none;
     }
 
-    @media (min-width: 1440px) {
-      padding: 0 32px;
-    }
-
-    .swiper-container--prices {
-      position: relative;
-      overflow: hidden;
-      background: #f8f8f8;
+    .table-caption {
+      width: 100%;
 
       @media (min-width: 320px) and (max-width: 767px) {
-        max-height: none;
+        display: none;
+      }
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+
+        .caption-text {
+          font-size: 14px;
+          line-height: 16px;
+          color: #7e7e82;
+          mix-blend-mode: normal;
+          opacity: 0.72;
+
+          &.rep {
+            flex-basis: 53%;
+          }
+
+          &.price {
+            flex-basis: 13.5%;
+          }
+
+          &.temp {
+            flex-basis: 14%;
+          }
+        }
+
+        .caption-empty {
+          visibility: hidden;
+          width: 119px;
+          height: 16px;
+        }
+      }
+    }
+    .table-caption--container {
+      @media (min-width: 768px) {
+        padding-left: 16px;
+        padding-right: 16px;
+        .caption-text--container {
+          padding-bottom: 16px;
+
+          &.rep {
+            padding-right: 12px;
+          }
+
+          &.price {
+            padding-right: 12px;
+          }
+
+          &.temp {
+            padding-right: 12px;
+          }
+        }
+      }
+    }
+
+    .swiper-wrapper {
+      list-style: none;
+      padding: 0px;
+      margin-top: 0;
+
+      @media (min-width: 768px) {
+        flex-direction: column;
       }
 
-      .table-caption {
+      @media (min-width: 1440px) {
+        flex-wrap: wrap;
+      }
+    }
+    .swiper-slide--container {
+      padding-right: 16px;
+      padding-left: 16px;
+    }
+    .swiper-slide {
+      width: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+      height: 200px;
+      background: #ffffff;
+      border: 1px solid #eaeaea;
+      box-sizing: border-box;
+      border-radius: 6px;
+
+      @media (min-width: 768px) {
         width: 100%;
-
-        @media (min-width: 320px) and (max-width: 767px) {
-          display: none;
-        }
-        @media (min-width: 768px) {
-          display: flex;
-          justify-content: space-between;
-          padding-left: 16px;
-          padding-right: 16px;
-
-          .caption-text {
-            font-size: 14px;
-            line-height: 16px;
-            color: #7e7e82;
-            mix-blend-mode: normal;
-            opacity: 0.72;
-            padding-bottom: 16px;
-
-            &.rep {
-              flex-basis: 53%;
-              padding-right: 12px;
-            }
-
-            &.price {
-              flex-basis: 13.5%;
-              padding-right: 12px;
-            }
-
-            &.temp {
-              flex-basis: 14%;
-              padding-right: 12px;
-            }
-          }
-
-          .caption-empty {
-            visibility: hidden;
-            width: 119px;
-            height: 16px;
-          }
-        }
+        height: 64px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: unset;
+        border-bottom: 1px solid #eaeaea;
+        border-radius: unset;
       }
 
-      .swiper-wrapper {
-        list-style: none;
-        padding: 0px;
-        margin-top: 0;
-
-        @media (min-width: 768px) {
-          flex-direction: column;
-        }
-
-        @media (min-width: 1440px) {
-          flex-wrap: wrap;
-        }
+      @media (min-width: 1440px) {
+        height: 64px;
       }
-      .swiper-slide {
-        width: 260px;
+
+      .price-service {
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-        padding-right: 16px;
-        padding-left: 16px;
-        height: 200px;
-        background: #ffffff;
-        border: 1px solid #eaeaea;
-        box-sizing: border-box;
-        border-radius: 6px;
 
-        @media (min-width: 768px) {
-          width: 100%;
-          height: 64px;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          border: unset;
-          border-bottom: 1px solid #eaeaea;
-          border-radius: unset;
-        }
-
-        @media (min-width: 1440px) {
-          height: 64px;
-        }
-
-        .price-service {
-          display: flex;
-          flex-direction: column;
-
-          &.service-block {
-            @media (min-width: 768px) {
-              flex-basis: 53%;
-            }
-          }
-
-          &.price-block {
-            @media (min-width: 768px) {
-              flex-basis: 13.5%;
-            }
-          }
-
-          &.term-block {
-            @media (min-width: 768px) {
-              flex-basis: 14%;
-            }
-          }
-
-          .price-service-text-title {
-            font-size: 14px;
-            line-height: 16px;
-            color: #7e7e82;
-            mix-blend-mode: normal;
-            opacity: 0.72;
-
-            @media (min-width: 768px) {
-              display: none;
-            }
-          }
-
-          .price-service-text-about {
-            font-size: 14px;
-            line-height: 18px;
-            letter-spacing: 0.2px;
-            color: #1b1c21;
-            padding-top: 4px;
+        &.service-block {
+          @media (min-width: 768px) {
+            flex-basis: 53%;
           }
         }
 
-        .order-btn {
-          position: absolute;
-          cursor: pointer;
-          left: 125px;
-          top: 152px;
-          display: flex;
-          justify-content: space-evenly;
-          align-items: center;
-          height: 32px;
-          width: 119px;
-          background: #ff3e79;
-          border: 0;
-          box-sizing: border-box;
-          border-radius: 16px;
-          transition: all 0.6s;
-
-          &:hover {
-            background-color: #fa88aa;
+        &.price-block {
+          @media (min-width: 768px) {
+            flex-basis: 13.5%;
           }
+        }
 
-          &:focus {
-            background-color: #f50049;
+        &.term-block {
+          @media (min-width: 768px) {
+            flex-basis: 14%;
           }
+        }
+
+        .price-service-text-title {
+          font-size: 14px;
+          line-height: 16px;
+          color: #7e7e82;
+          mix-blend-mode: normal;
+          opacity: 0.72;
 
           @media (min-width: 768px) {
-            position: unset;
-            left: unset;
-            top: unset;
-          }
-
-          .order-text {
-            font-family: 'TT Lakes';
-            font-size: 12px;
-            font-weight: bold;
-            line-height: 24px;
-            letter-spacing: -0.15px;
-            text-transform: uppercase;
-            color: #ffffff;
+            display: none;
           }
         }
-      }
-      .swiper-pagination--prices {
-        position: unset;
-        margin-top: 16px;
-        text-align: center;
-        transition: 0.3s opacity;
-        transform: translate3d(0, 0, 0);
-        z-index: 10;
 
-        @media (min-width: 768px) {
-          display: none;
+        .price-service-text-about {
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0.2px;
+          color: #1b1c21;
         }
-      }
-      .swiper-pagination-bullet {
-        width: 12px;
-        height: 12px;
-        background-color: #dddddd;
-      }
-      .swiper-pagination-bullet-active {
-        background-color: #b5b6bc;
-      }
-    }
-
-    .offer-block {
-      .offer-text {
-        font-family: 'TT Lakes';
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: 0.2px;
-        color: #1b1c21;
-
-        @media (min-width: 768px) {
-          width: 421px;
+        .price-service-text-about--container {
+          padding-top: 4px;
         }
       }
 
-      .offer-link {
-        position: relative;
-        font-family: 'TT Lakes';
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.2px;
-        text-align: left;
-        font-weight: 500;
-        text-decoration: none;
-        padding-right: 16px;
-        color: #1b1c21;
-        transition: color 0.3s;
+      .order-btn {
+        position: absolute;
+        cursor: pointer;
+        left: 125px;
+        top: 152px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 32px;
+        width: 119px;
+        background: #ff3e79;
+        border: 0;
+        box-sizing: border-box;
+        border-radius: 16px;
+        transition: all 0.6s;
 
         &:hover {
-          color: #ff3e79;
+          background-color: #fa88aa;
         }
 
-        &::after {
-          content: '';
-          position: absolute;
-          right: 4px;
-          bottom: 4px;
-          display: block;
-          width: 7.5px;
-          height: 12px;
-          background-image: url(../img/Line-right.svg);
+        &:focus {
+          background-color: #f50049;
+        }
+
+        @media (min-width: 768px) {
+          position: unset;
+          left: unset;
+          top: unset;
+        }
+
+        .order-text {
+          font-family: 'TT Lakes';
+          font-size: 12px;
+          font-weight: bold;
+          line-height: 24px;
+          letter-spacing: -0.15px;
+          text-transform: uppercase;
+          color: #ffffff;
         }
       }
     }
+
+    .swiper-pagination--prices {
+      position: unset;
+      margin-top: 16px;
+      text-align: center;
+      transition: 0.3s opacity;
+      transform: translate3d(0, 0, 0);
+      z-index: 10;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+    .swiper-pagination-bullet {
+      width: 12px;
+      height: 12px;
+      background-color: #dddddd;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: #b5b6bc;
+    }
+  }
+
+  .offer-block {
+    .offer-text {
+      font-family: 'TT Lakes';
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.2px;
+      color: #1b1c21;
+
+      @media (min-width: 768px) {
+        width: 421px;
+      }
+    }
+
+    .offer-link {
+      position: relative;
+      font-family: 'TT Lakes';
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.2px;
+      text-align: left;
+      font-weight: 500;
+      text-decoration: none;
+
+      color: #1b1c21;
+      transition: color 0.3s;
+
+      &:hover {
+        color: #ff3e79;
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        right: 4px;
+        bottom: 4px;
+        display: block;
+        width: 7.5px;
+        height: 12px;
+        background-image: url(../img/Line-right.svg);
+      }
+    }
+    .offer-link--container {
+      padding-right: 16px;
+    }
+  }
+}
+.prices-container--container {
+  padding: 0 16px;
+  @media (min-width: 768px) {
+    padding: 0 24px;
+  }
+  @media (min-width: 1440px) {
+    padding: 0 32px;
   }
 }
